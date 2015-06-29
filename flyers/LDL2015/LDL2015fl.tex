@@ -1,0 +1,142 @@
+ 
+\def\filename{leaflet-manual.tex}
+\def\fileversion{v1.0d}   % change this when leaflet-manual changed, too.
+\def\filedate{2012/06/04}
+\def\docdate {2012/06/04} % change this when leaflet-manual changed, too.
+\listfiles
+\errorcontextlines=99
+\documentclass[
+notumble,
+nofoldmark,
+%%dvipdfm,
+%%portrait,
+%%titlepage,
+%%nocombine,
+%%a3paper,
+%%debug,
+%%nospecialtricks,
+%%draft,
+]{leaflet}
+\setmargins{15mm}{8mm}{12mm}{12mm}
+% \usepackage[widht=311mm,height=214mm,center]{crop}
+\usepackage{tabularx}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\renewcommand*\foldmarkrule{.3mm}
+\renewcommand*\foldmarklength{5mm}
+
+\usepackage[T1]{fontenc}
+% \usepackage[T3]{inputenc}
+\usepackage{textcomp}
+\usepackage{mathptmx}
+\usepackage{libertine}
+% \usepackage[scaled=0.9]{helvet}
+\makeatletter
+\def\ptmTeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.075emX\@}
+\DeclareRobustCommand{\ptmLaTeX}{L\kern-.3em
+        {\setbox0\hbox{T}%
+         %\vb@xt@ % :-)
+         \vbox to\ht0{\hbox{%
+                            \csname S@\f@size\endcsname
+                            \fontsize\sf@size\z@
+                            \math@fontsfalse\selectfont
+                            A}%
+                      \vss}%
+        }%
+        \kern-.12em
+        \ptmTeX}
+\makeatother
+\let\TeX=\ptmTeX
+\let\LaTeX=\ptmLaTeX
+\usepackage{shortvrb}
+\MakeShortVerb{\|}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage[dvipsnames,usenames]{color}
+\usepackage[table]{xcolor}
+
+
+% \usepackage{langscicolors}
+%%%%\renewcommand{\descfont}{\normalfont}
+\newcommand\Lpack[1]{\textsf{#1}}
+\newcommand\Lclass[1]{\textsf{#1}}
+\newcommand\Lopt[1]{\texttt{#1}}
+\newcommand\Lprog[1]{\textit{#1}}
+
+\newcommand*\defaultmarker{\textsuperscript\textasteriskcentered}
+
+
+\title{Linked Data in Linguistics}
+\author{%
+  OWLG}
+\date{Last updated~\docdate\\printed \today}
+
+% \CutLine*{1}% Dotted line without scissors
+% \CutLine*{6}%   
+
+ 
+% \AddToBackground{3}{
+%     \put(-2,10){
+%         \includegraphics[width=.3\paperwidth]{somegraphic.png}%
+%     } 
+% }
+
+
+\begin{document}
+
+% position: | | |x|
+%
+% \maketitle
+\thispagestyle{empty}
+ 
+%%\tableofcontents
+ 
+
+\vspace*{12cm}
+
+\hspace*{-6mm}
+\parbox{\textwidth}{
+\sffamily
+\parbox{\textwidth}{\Huge Linked Data \\ in Linguistics}\\ 
+}
+ 
+
+\newpage % position: |x| | |
+\includegraphics[width=2\textwidth]{llod-cloud.png}
+\section{Publications}
+\begin{itemize}
+\item ...
+\end{itemize} 
+
+\newpage % position: | |x| |
+\vspace*{12.35cm} 
+ \section{Philosophy}
+ \parbox{\textwidth}{
+...
+ }
+
+\newpage  % position: | | |x|
+
+\section{About}
+
+\begin{itemize}
+\item ...
+\end{itemize} 
+ 
+\newpage  % position: |x| | |
+\section{Members}
+
+\begin{itemize}
+ \item ...
+\end{itemize}
+
+     
+\newpage   % position: | |x| |
+\section{Support us}
+ 
+
+\loggingall
+\end{document}
+\endinput
+%%
+%% End of file `leaflet-manual.tex'.
